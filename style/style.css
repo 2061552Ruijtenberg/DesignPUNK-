@@ -1,0 +1,337 @@
+.clear {
+    clear: both;
+}
+
+/* font declarations && animations*/
+
+@font-face {
+    font-family: gothicPunk;
+    src: url(/fonts/Gothic\ Punk.ttf);
+}
+
+@font-face {
+    font-family: leMermure;
+    src: url(/fonts/le-murmure.otf);
+}
+
+@font-face {
+    font-family: montserrat-bold;
+    src: url(/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: bitter;
+    src: url(/fonts/Bitter-VariableFont_wght.ttf);
+}
+
+@keyframes home-page {
+    from {
+        background-image: url(/images/homeBefore.png);
+    }
+    to {
+        background-image: url(/images/homeAfter.png);
+    }
+}
+
+/* homepage styling */
+
+body {
+    background-color: #FBF9F2;
+    font-family: bitter;
+    font-size: 15pt;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#home-page {
+    margin: 0 auto;
+    height: 1080px;
+    width: 100%;
+    background-image: url(/images/homeBefore.png);
+    animation-name: home-page;
+    animation-duration: 0.5s;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.article-ripped {
+    top: -50px;
+    overflow: hidden;
+}
+
+#article-page {
+    margin: 0 auto;
+}
+
+/* Article container styling*/
+
+#article-container {
+    margin: 0 auto;
+    width: 900px;
+    height: 950px;
+    padding: 20px;
+}
+
+#article-h1 {
+    font-family: gothicPunk;
+    text-align: center;
+    font-size: 100pt;
+    color: #B64326;
+    margin-bottom: 50px;
+}
+
+#article-container a {
+    text-decoration: none;
+}
+
+.article-button {
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 200px;
+    transition: .2s ease-in-out;
+    overflow: hidden;
+}
+
+.article-button:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    box-shadow: 20px 20px 20px black;
+}
+
+.article-teaser {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 10px;
+    color: #FBF9F2;
+    text-align: center;
+    background-color: rgba(22,14 ,11 , 0.5);
+}
+
+.article-teaser h2 {
+    font-family: leMermure;
+    font-size: 20pt;
+    margin-bottom: 15px;
+}
+
+.article-teaser p {
+    font-size: 16pt;
+}
+
+.article-otd {
+    background-image: url(/images/articleotd.png);
+    background-position: -250px -250px;
+    width: 500px;
+    margin-right: 50px;
+    height: 450px;
+}
+
+.article-side1 {
+    background-image: url(/images/Emory_Douglas.jpg);
+    background-size: cover;
+    margin-bottom: 50px;
+    width: 350px;
+}
+
+.article-side2 {
+    background-image: url(/images/concert.jpg);
+    background-size: cover;
+    width: 350px;
+}
+
+.article-bottom {
+    background-image: url(/images/Graffiti.jpg);
+    margin-top: 50px;
+    height: 300px;
+    width: 900px;
+}
+
+/* footer styling*/
+
+#home-footer {
+    background-image: url(/images/articleFooter.png);
+    width: 100%;
+    height: 250px;
+}
+
+#footer-list {
+    position: relative;
+    margin: 0 auto;
+    top: 175px;
+    width: 680px;
+}
+
+.footer-urls {
+    float: left;
+    padding-right: 15px;
+    color: #FBF9F2;
+}
+
+/* article page layout */
+
+.fixed {
+    position: fixed;
+}
+
+.back-button {
+    position: fixed;
+    top: 150px;
+    left: 150px;
+}
+
+.arrow-left {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.back-button a {
+    text-decoration: none;
+    color: black;
+}
+
+#article-footer {
+    bottom: -10px;
+    background-image: url(/images/articleFooter.png);
+    width: 100%;
+    height: 150px;
+}
+
+/* article content layout */
+
+.article-title {
+    padding-top: 200px;
+    margin: 0 auto;
+    width: 1350px;
+    height: auto;
+}
+
+.article-title h1 {
+    font-family: leMermure;
+    color: #B64326;
+    font-size: 110pt;
+    text-align: center;
+    line-height: 100pt;
+    padding-bottom: 20px;
+}
+
+#font-change {
+    font-family: gothicPunk;
+    font-size: 80pt;
+}
+
+.article-title p {
+    text-align: end;
+    font-size: 15pt;
+}
+
+.article-content {
+    padding-top: 50px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    text-align: left;
+    width: 1000px;
+}
+
+.article-content p {
+    font-family: bitter;
+    margin-bottom: 20px;
+    font-size: 15pt;
+    line-height: 32.4pt;
+}
+
+#intro {
+    font-family: montserrat-bold;
+    font-size: 15pt;
+}
+
+.float-text {
+    float: left;
+    width: 260px;
+    margin-right: 100px;
+}
+
+/* image styling article */
+
+.article-img {
+    width: 500px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    background-color: #160E0B;
+    box-shadow: 20px 20px 20px#160E0B;
+}
+
+.image-container {
+    padding: 10px 20px;
+    text-align: center;
+    color: #FBF9F2;
+}
+
+.image-container p {
+    font-size: 10pt;
+    line-height: 18pt;
+}
+
+.img1 {
+    width: 500px;
+}
+
+#wider-text {
+    width: 300px;
+    margin-right: 50px;
+}
+
+.img2 {
+    width: 520px;
+}
+
+.img3 {
+    width: 100%;
+    margin-bottom: 25px;
+    float: none;
+}
+
+/*reference list */
+#references{
+    margin-top: 50px;
+    font-size: 11pt;
+    line-height: 19.8pt;
+}
+
+#references ul{
+    list-style-type: circle;
+}
+
+/*author block */
+
+#author{
+    margin: 100px auto;
+    padding: 20px;
+    width: 75%;
+    text-align: center;
+    border: 10px solid #160E0B;
+    border-radius: 15px;
+    }
+
+#author h1{
+    font-family: gothicPunk;
+    color: #B64326;
+    font-size: 40pt;
+    padding-bottom: 25px;
+}
+
+#author p{
+    font-size: 12pt;
+    line-height: 21.6pt;
+}
+
